@@ -49,16 +49,19 @@
   "files": [
     "dist"
   ],
-  "types": "dist/component-starter/index.d.ts",
-  "main": "dist/component-starter.umd.js",
-  "module": "dist/component-starter.es.js",
   "exports": {
     ".": {
-      "import": [
-        "./dist/component-starter.es.js"
-      ],
-      "require": "./dist/component-starter.umd.js"
-    },
-    "./package.json": "./package.json"
-  }
+      "import": {
+        "types": "./dist/component-starter/index.d.ts",
+        "default": "./dist/component-starter.es.js"
+      },
+      "require": {
+        "types": "./dist/component-starter/index.d.ts",
+        "default": "./dist/component-starter.umd.js"
+      }
+    }
+  },
+  "types": "./dist/component-starter/index.d.ts",
+  "main": "./dist/component-starter.umd.js",
+  "module": "./dist/component-starter.es.js"
 }
