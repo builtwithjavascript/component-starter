@@ -2,10 +2,10 @@
 /// <reference types="vite/client" />
 
 import { defineConfig } from 'vite'
-import { fileURLToPath, URL } from 'url'
 import path from 'path'
+import { name } from './package.json'
 
-const projectName = 'component-starter'
+const projectName = name.replace('@', '@builtwithjavascript/').trim().toLowerCase()
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -14,7 +14,7 @@ export default defineConfig({
   envDir: './src/',
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src/') //fileURLToPath(new URL('./src', import.meta.url))
+      '@': path.resolve(__dirname, 'src/')
     },
   },
   test: {
@@ -26,7 +26,7 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/main.ts'), // fileURLToPath(new URL('src/main.ts')),
+      entry: path.resolve(__dirname, 'src/index.ts'),
       name: projectName,
       fileName: (format) => `${projectName}.${format}.js`,
     },
