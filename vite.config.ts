@@ -4,7 +4,6 @@
 import { defineConfig } from 'vite'
 import path from 'path'
 import { name } from './package.json'
-
 const projectName = name.replace('@', '@builtwithjavascript/').trim().toLowerCase()
 
 // https://vitejs.dev/config/
