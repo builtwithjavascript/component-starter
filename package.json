@@ -1,6 +1,6 @@
 {
   "name": "@builtwithjavascript/component-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Starter kit for component library using Vite with TypeScript (just JS, no frameworks or libraries)",
   "author": "Damiano Fusco",
   "license": "MIT",
