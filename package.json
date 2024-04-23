@@ -1,6 +1,6 @@
 {
   "name": "@builtwithjavascript/component-starter",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Starter kit for component library using Vite with TypeScript (just JS, no frameworks or libraries)",
   "author": "Damiano Fusco",
   "license": "MIT",
@@ -35,16 +35,16 @@
     }
   },
   "devDependencies": {
-    "@types/jest": "^29.5.11",
-    "@types/node": "^20.11.5",
-    "husky": "^8.0.3",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.7",
+    "husky": "^9.0.11",
     "jsdom": "^24.0.0",
-    "prettier": "^3.2.4",
+    "prettier": "^3.2.5",
     "pretty-quick": "^4.0.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.3.3",
-    "vite": "^5.0.12",
-    "vitest": "^1.2.1"
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10",
+    "vitest": "^1.5.0"
   },
   "files": [
     "dist"
