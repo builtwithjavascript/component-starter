@@ -1,4 +1,4 @@
-import { useComponentStarter } from '@/component-starter/'
+import { useComponentStarter } from '@/components'
 
 describe('useComponentStarter', () => {
   it(`should return a defined instance`, () => {

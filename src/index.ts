@@ -1,1 +1,1 @@
-export * from './component-starter'
+export * from './components'
